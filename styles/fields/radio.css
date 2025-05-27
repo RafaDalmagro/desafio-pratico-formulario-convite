@@ -1,0 +1,155 @@
+.radio-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .25rem;
+    gap: .5rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    border-radius: .50rem;
+    background-color: var(--input-base);
+
+    &>input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        display: flex;
+        gap: 0.25rem;
+        justify-content: center;
+        align-content: center;
+
+        align-items: center;
+        cursor: pointer;
+        background-color: inherit;
+        color: var(--text-body);
+        transition: background-color 0.2s ease;
+        border-radius: .25rem;
+        padding: .75rem 1.125rem;
+        margin: 0;
+    }
+
+    .radio-image-building {
+        background-image: url(../../assets/icons/building-2.svg);
+        background-position: center;
+        background-size: contain;
+
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .radio-image-video {
+        background-image: url(../../assets/icons/video.svg);
+        background-position: center;
+        background-size: contain;
+
+        width: 1rem;
+        height: 1rem;
+    }
+
+    &>input[type="radio"]:checked+label {
+        background-color: var(--shape-hover);
+        color: var(--text-heading);
+
+        .radio-image-building {
+            background-image: url(../../assets/icons/building-checked.svg);
+        }
+
+        .radio-image-video {
+            background-image: url(../../assets/icons/video-checked.svg);
+        }
+    }
+
+}
+
+.radio-colors {
+    display: flex;
+    justify-content: space-between;
+
+    label{
+        margin-bottom: 1rem;
+    }
+
+    width: 100%;
+
+    input[id="1"] {
+        background-color: var(--brand-light);
+    }
+
+    input[id="2"] {
+        background-color: var(--navy);
+    }
+
+    input[id="3"] {
+        background-color: var(--purple);
+    }
+
+    input[id="4"] {
+        background-color: var(--fuschia);
+    }
+
+    input[id="5"] {
+        background-color: var(--pink);
+    }
+
+    input[id="6"] {
+        background-color: var(--danger);
+    }
+
+    input[id="7"] {
+        background-color: var(--orange);
+    }
+
+    input[id="8"] {
+        background-color: var(--yellow);
+    }
+
+    input[id="9"] {
+        background-color: var(--lime);
+    }
+
+    input[id="10"] {
+        background-color: var(--green);
+    }
+
+    input[id="11"] {
+        background-color: var(--cyan);
+    }
+
+    input {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 999rem;
+        padding: .375rem;
+    }
+}
+
+.card-wrapper{
+    display: grid;
+    gap: 1rem;
+
+    #card{
+        position: relative;
+        display: grid;
+        justify-items: center;
+        gap: 0.5rem;
+        
+        padding: .25rem .25rem 0;
+
+        background-color: var(--shape-button);
+        border-radius: .5rem;
+
+        img{
+            border-radius: .25rem;
+        }
+        label{
+            margin-block: .5rem;
+        }
+        input{
+            offset: all;
+            inset: 0;
+            position: absolute;
+            height: 100%;
+            background-color: transparent;
+        }
+    }
+}

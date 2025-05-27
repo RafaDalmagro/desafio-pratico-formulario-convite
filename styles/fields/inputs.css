@@ -1,0 +1,35 @@
+input,
+textarea,
+select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    padding: 0.8125rem 1rem;
+}
+
+label {
+    font: var(--body-sm);
+    color: var(--text-body);
+
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color: var(--brand-light);
+}
+
+input:hover,
+textarea:hover,
+select:hover{
+    
+}
