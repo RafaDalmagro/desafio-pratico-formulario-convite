@@ -57,6 +57,13 @@ main {
         display: grid;
         gap: 1.5rem;
     }
+    
+    #event{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: .5rem;
+    }
 
     #personality{
         display: grid;
@@ -66,12 +73,5 @@ main {
             display: grid;
             gap: 1.75rem;
         }
-    }
-    
-    #event{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: .5rem;
     }
 }

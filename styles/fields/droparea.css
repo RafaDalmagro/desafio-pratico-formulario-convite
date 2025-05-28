@@ -1,0 +1,38 @@
+.style {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-flow: column;
+    gap: 1rem;
+
+    .droparea-wrapper {
+
+        .dropzone {
+            display: flex;
+            gap: 1rem;
+            align-content: center;
+            align-items: center;
+            position: relative;
+
+            .droparea-button {
+                background-color: var(--shape-button);
+                padding: .75rem;
+                border-radius: .5rem;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                gap: .5rem;
+                overflow: hidden;
+                cursor: pointer;
+
+                &>input {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    inset: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

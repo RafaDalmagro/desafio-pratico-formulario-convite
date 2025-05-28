@@ -19,7 +19,6 @@ label {
     color: var(--text-body);
 
     display: block;
-    margin-bottom: 0.75rem;
 }
 
 input:focus,
