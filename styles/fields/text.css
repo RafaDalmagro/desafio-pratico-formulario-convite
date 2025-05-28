@@ -1,0 +1,11 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

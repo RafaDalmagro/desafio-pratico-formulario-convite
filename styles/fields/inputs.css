@@ -23,12 +23,33 @@ label {
 
 input:focus,
 textarea:focus,
-select:focus{
+select:focus {
     border-color: var(--brand-light);
+}
+
+input {
+    &[required]+.erro {
+        font: var(--body-xs);
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        align-items: center;
+        color: var(--danger);
+    }
+
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &:not(:focus):valid+.erro {
+        display: none;
+    }
+
+    &:valid +.erro {
+        display: none;
+    }
 }
 
 input:hover,
 textarea:hover,
-select:hover{
-    
-}
+select:hover {}

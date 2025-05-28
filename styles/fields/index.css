@@ -1,5 +1,6 @@
 @import url(inputs.css);
 @import url(select.css);
 @import url(radio.css);
-@import url(textarea.css);
+@import url(checkbox.css);
 @import url(droparea.css);
+@import url(text.css);
