@@ -251,19 +251,20 @@
 .toggle-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     .toggle {
         display: flex;
-        align-items: center;
         gap: .5rem;
-
+        align-items: center;
         &>input[type="radio"] {
-            appearance: none;
             border-radius: 999px;
-            object-fit: contain;
+            width: 1.5rem;
+            height: 1.5rem;
         }
-
+        &>label:has(.mb-12){
+            align-self: flex-start;
+        }
         input:checked {
             background-color: var(--brand-light);
         }
