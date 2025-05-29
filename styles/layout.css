@@ -91,20 +91,26 @@ footer {
     .action {
         display: flex;
         justify-content: end;
+
         button {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: .75rem;
-
+            border: none;
             width: 11.0625rem;
+            height: 3rem;
             border-radius: .5rem;
-            padding: 14px 20px;
-            font: var(--body-md);
+            padding: .875rem 1.25rem;
+            font: var(--body-sm);
             color: var(--text-heading);
             background-color: var(--brand-dark);
 
             cursor: pointer;
+        }
+
+        button:hover{
+            background-color: var(--brand-mid);
         }
     }
 }
