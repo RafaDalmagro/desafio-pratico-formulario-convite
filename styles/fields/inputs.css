@@ -10,8 +10,12 @@ select {
     font: var(--body-md);
     color: var(--input-placeholder);
     background-color: var(--input-base);
-    color: var(--input-placeholder);
-    padding: 0.8125rem 1rem;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="tel"], textarea{
+        padding: 0.8125rem 1rem;
 }
 
 label {

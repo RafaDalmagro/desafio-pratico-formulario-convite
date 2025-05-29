@@ -75,3 +75,10 @@ main {
         }
     }
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-top: 1px solid var(--input-stroke);
+}
